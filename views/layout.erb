@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/styles.css">
+    <title>my CRM</title>
+  </head>
+  <body>
+
+    <header>
+      <h2>Bitmaker CRM</h>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/contacts">Add a Contact</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+    <main>
+      <%= yield %>
+    </main>
+
+    <footer>
+      @Bitmaker 2017
+    </footer>
+
+  </body>
+</html>

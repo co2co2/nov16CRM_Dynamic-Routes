@@ -9,4 +9,8 @@
         <li>note: <b> <%= @contact.note %></b></li>
   </ul>
   </div>
+  <form action='/contacts/<%= @contact.id %>' method='post'>
+    <input type='hidden' name='_method' value='put'>
+    <input type='submit' value='Delete Contact'>
+  </form>
   </main>

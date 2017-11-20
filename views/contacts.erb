@@ -6,7 +6,7 @@
 
   <% @contacts.each_with_index do |contact| %>
     <div>  <b><%= contact.full_name %></b> (<%= contact.email %>)</br>
-      <a href="/contacts/<%= contact.id %>">Edit</a> | <a href="/contacts/<%= contact.id %>">Delete</a>
+      <a href="/contacts/<%= contact.id %>/edit">Edit</a> | <a href="/contacts/<%= contact.id %>">Delete</a>
     </div></br>
   <% end %>
 </main>

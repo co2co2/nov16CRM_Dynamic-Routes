@@ -1,7 +1,13 @@
 
-  <body>
-    <h1>welcom to coco's crm</h1>
+<body>
 
+<main>
+  <p>There are <%= Contact.all.length%> contacts</p>
 
-
-  </body>
+  <% @contacts.each_with_index do |contact| %>
+    <div>  <b><%= contact.full_name %></b> (<%= contact.email %>)</br>
+      <a href="/contacts/<%= contact.id %>">Edit</a> | <a href="/contacts/<%= contact.id %>">Delete</a>
+    </div></br>
+  <% end %>
+</main>
+</body>
